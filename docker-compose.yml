@@ -1,0 +1,9 @@
+services:
+  n-min-finder:
+    build: .
+    ports:
+      - "8083:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    volumes:
+      - ./test-data:/app/test-data:ro

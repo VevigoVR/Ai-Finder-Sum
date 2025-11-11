@@ -1,6 +1,5 @@
-package com.example.finder;
+package com.example.finder.config;
 
-// SwaggerConfig.java
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
 import org.springframework.context.annotation.Bean;
@@ -13,8 +12,8 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("N-th Minimum Finder API")
+                        .title("AI API")
                         .version("1.0")
-                        .description("Сервис для поиска N-ного минимального числа из Excel файла"));
+                        .description("AI Systems"));
     }
 }
